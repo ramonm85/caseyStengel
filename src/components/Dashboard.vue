@@ -48,6 +48,7 @@ export default {
                 'peg': doc.data().peg,
                 'pass': doc.data().pass,
                 'position': doc.data().position,
+                'choices': doc.data(). choices,
 
             }
             this.Operators.push(data)

@@ -27,6 +27,12 @@
           <label>Position</label>
         </div>
       </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" v-model="choices" required>
+          <label>choices</label>
+        </div>
+      </div>
       <button type="submit" class="btn">Submit</button>
       <router-link to="/" class="btn grey">Cancel</router-link>
     </form>
@@ -43,7 +49,8 @@ export default {
           peg: null,
           name: null,
           pass: null,
-          position: null
+          position: null,
+          choices: null
         }
     },
      methods: {
@@ -52,7 +59,8 @@ export default {
             peg: this.peg,
             name: this.name,
             pass: this.pass,
-            position: this.position
+            position: this.position,
+            choices: this.choices
           })
           .then(docRef => {
             console.log('Client added: ', docRef.id)
