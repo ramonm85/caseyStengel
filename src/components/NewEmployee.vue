@@ -1,6 +1,7 @@
 <template>
    <div id="new-employee">
-       <h3>New Employee</h3>
+       <h3>New Choices</h3>
+       <p style="color :red"> PLEASE MAKE SURE YOUR CHOICES ARE CORRECT THE FIRST TIME</p>
        <div class="row">
     <form @submit.prevent="saveEmployee" class="col s12">
       <div class="row">
